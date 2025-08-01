@@ -1,0 +1,1187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Applied for the overall website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+li {
+   list-style: none; 
+}
+
+/* Design for navbar */
+.navbar-container {
+    position: fixed;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    font-size: 14px;
+    width: 100%;
+    height: 2cm;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 50px;
+    z-index: 1000;
+    top: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    margin-right: 5px;
+    margin-left: 1100px;
+    align-items:end ;
+} 
+
+.nav-link {
+    list-style: none;
+    gap: 2rem;
+    color: white;
+    font-family: "Playfair Display";
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-link a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+/* Design for dropdown in navbar */
+.drop-down a {
+    color: #ffffff;
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.learn .drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: #333333;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 15px;
+    display: none;
+}
+
+.drop-down a:hover {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color:white;
+    border-radius: 0.5rem;
+}
+
+.learn:hover .drop-down {
+    display: block;
+}
+
+.learn a {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.learn:hover .material-symbols-outlined {
+    transform: rotate(180deg);
+
+}
+
+.logo-img {
+    margin-left: 20px;
+    width: 270px;
+    position: fixed;
+    height: auto;
+    left: 0px;
+}
+
+/* Design for home section */
+.home {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-top: 80px;
+    padding: 40px;
+    
+}
+
+.home-img img {
+    width: 650px;
+    filter: drop-shadow(10px 10px 15px black);
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: "Playfair Display";
+    text-align: center;
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    border-radius: 30px;
+}
+
+.home-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #333333;
+    font-family:"Roboto" ;
+}
+
+/* Design for how search engines work section */
+.work {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 80px;
+    text-align: center;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.work p{
+    font-size: 23px;
+    width: 700px;
+    height: 250px;
+    font-family: "Roboto";
+}
+
+.title {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 70px;
+    border: 1px solid black;
+    width: 500px;
+    align-items: center;
+    padding: 65px;
+    border-radius: 10px;
+    margin-left: 50px;
+    font-family: "Playfair Display";
+}
+
+.work-image img {
+    width: 550px;
+    border-radius: 20px;
+    height: 330px;
+    margin-right: 50px;
+}
+
+.links {
+    width: 600px;
+    border: 5px solid black;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: left;
+    font-family: "Roboto";
+    list-style: none;
+}
+
+.links h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Playfair Display";
+    font-size: 25px;
+}
+
+
+
+.link1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.link1:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem;
+}
+
+.link2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.link2:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem;
+}
+
+
+.link3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.link3:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem;
+}
+
+.link4 {
+    color: #ffffff;
+    font-size: 18.5px;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.link4:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem;
+}
+
+/* Design for popular search engines section */
+.popular {
+    text-align: center;
+    align-items: center;
+    margin: 100px; 
+}
+
+.popular h1 {
+    color: #ffffff;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    font-family: "Playfair Display";
+    width: 500px;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 45px;
+    margin-left: 400px;
+}
+
+.se-content {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-align: left;
+
+}
+
+table {
+    width: 100%;
+    max-width: 1400px;
+    border-collapse: collapse;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+thead {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;    
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;   
+    font-family: "Playfair Display";
+}
+
+td {
+    color: #f4f4f4;
+    font-family: "Roboto";
+    text-align: left;
+}
+
+.logo-container {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 45px;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    padding-bottom: 0;
+}
+#logo1{
+    width: 180px;
+    margin: 20px;
+}
+
+#logo2{
+    width: 130px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+#logo3{
+    width: 110px;
+    margin: 30px;
+    margin-left: 110px;
+}
+
+#logo4{
+    width: 250px;
+    margin: 15px;
+    margin-left: 30px ;
+}
+
+#logo5{
+    width: 160px;
+    margin: 30px;
+    margin-left: 10px;
+}
+
+.logo {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.info-grid {
+    display: none;
+    grid-template-areas: "definition definition logo"
+    "pros cons logo";
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #ffffff;
+    padding: 15px;
+    padding-bottom: 0;
+    font-family: "Roboto";
+    transition: 0.5s ease;
+}
+
+#info-google .definition  { 
+    grid-area: definition;
+    width: 900px;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 40px;
+} 
+
+#info-google .pros { 
+    font-size: 25px;
+    grid-area: pros;
+    margin: 10px;
+}
+
+#info-google .pros li {
+    text-align: start;
+    grid-area: logo;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-google .cons { 
+    font-size: 25px;
+    grid-area: cons;
+    margin: 10px;
+}
+
+#info-google .cons li {
+    text-align: start;
+    grid-area: cons;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-google .logo img{
+    width: 320px;
+    grid-area: logo;
+}
+
+#info-google .added li {
+    grid-area: logo;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#info-google .added .name {
+    font-size: 50px;
+    font-family: "Playfair Display";
+}
+
+#info-bing .definition  { 
+    grid-area: definition;
+    width: 900px;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 40px;
+} 
+#info-bing .pros { 
+    font-size: 25px;
+    grid-area: pros;
+    margin: 10px;
+}
+
+#info-bing .pros li {
+    text-align: start;
+    grid-area: logo;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-bing .cons { 
+    font-size: 25px;
+    grid-area: cons;
+    margin: 10px;
+}
+
+#info-bing .cons li {
+    text-align: start;
+    grid-area: cons;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-bing .logo img {
+    width: 250px;
+    grid-area: logo;
+}
+
+#info-bing .added li {
+    grid-area: logo;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#info-bing .added .name {
+    font-size: 50px;
+    font-family: "Playfair Display";
+}
+
+#info-go .definition  { 
+    grid-area: definition;
+    width: 900px;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 40px;
+} 
+#info-go .pros { 
+    font-size: 25px;
+    grid-area: pros;
+    margin: 10px;
+}
+
+#info-go .pros li {
+    text-align: start;
+    grid-area: logo;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-go .cons { 
+    font-size: 25px;
+    grid-area: cons;
+    margin: 10px;
+}
+
+#info-go .cons li {
+    text-align: start;
+    grid-area: cons;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#info-go .logo img {
+    width: 250px;
+    grid-area: logo;
+    margin-top: 30px;
+}
+
+#info-go .added li {
+    grid-area: logo;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#info-go .added .name {
+    font-size: 50px;
+    font-family: "Playfair Display";
+}
+
+#info-yahoo .definition  { 
+    grid-area: definition;
+    width: 900px;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 40px;
+} 
+#info-yahoo .pros { 
+    font-size: 25px;
+    grid-area: pros;
+    margin: 10px;
+}
+
+#info-yahoo .pros li {
+    text-align: start;
+    grid-area: logo;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-yahoo .cons { 
+    font-size: 25px;
+    grid-area: cons;
+    margin: 10px;
+}
+
+#info-yahoo .cons li {
+    text-align: start;
+    grid-area: cons;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#info-yahoo .logo img {
+    width: 400px;
+    grid-area: logo;
+}
+
+#info-yahoo .added li {
+    grid-area: logo;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#info-yahoo .added .name {
+    font-size: 50px;
+    font-family: "Playfair Display";
+}
+
+#info-edge .definition  { 
+    grid-area: definition;
+    width: 900px;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 40px;
+} 
+#info-edge .pros { 
+    font-size: 25px;
+    grid-area: pros;
+    margin: 10px;
+}
+
+#info-edge .pros li {
+    text-align: start;
+    grid-area: logo;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-edge .cons { 
+    font-size: 25px;
+    grid-area: cons;
+    margin: 10px;
+}
+
+#info-edge .cons li {
+    text-align: start;
+    grid-area: cons;
+    margin: 10px;
+    padding: 10px;
+}
+
+#info-edge .logo img {
+    width: 300px;
+    grid-area: logo;
+    margin-top: 60px;
+}
+
+#info-edge .added li {
+    grid-area: logo;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#info-edge .added .name {  
+    margin-top: 20px;
+    font-size: 45px;
+    font-family: "Playfair Display";
+}
+
+/* Design for tricks and tips section */
+.tricksandtips {
+    display: grid;
+    row-gap: 40px;
+    grid-template-areas:
+        "title_tips title_tips title_tips"
+        "tips techniques hacks"
+        "resources resources resources";
+    padding: 60px;
+    padding-top: 90px;
+    column-gap: 60px;
+}
+
+.title_tips {
+    color: #ffffff;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    font-family: "Playfair Display";
+    width: 500px;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 45px;
+    grid-area: title_tips;
+    text-align: center;
+    margin-left: 435px;
+}
+
+.tips {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    grid-area: tips;
+}
+
+.tips h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 26;
+    margin-bottom: 40px;
+    font-family: "Playfair Display";
+
+}
+
+.tips li {
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "Roboto";
+    color: #ffffff;}
+
+
+.techniques {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    grid-area: techniques;
+}
+
+.techniques h1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Playfair Display";
+    color: #ffffff;}
+
+.techniques li {
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "Roboto";
+    color: #ffffff;}
+
+.hacks {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    grid-area: hacks;
+}
+
+.hacks h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-family: "Playfair Display";
+    color: #ffffff;}
+
+.hacks li {
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "Roboto";
+    color: #ffffff;}
+
+.resources{
+    background: linear-gradient(90deg, #000000, #3533cd);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    grid-template-areas: footer;
+    grid-area: resources;
+    margin: 50px;
+    padding-bottom: 30px;
+}
+
+.resources h1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Playfair Display";
+    color: #ffffff;}
+
+.resources li {
+    margin-top: 20px;
+    font-size: 23px;
+    padding-left: 160px;
+    font-family: "Roboto";
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.first{
+    text-decoration: none;
+}
+
+.first:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.second{
+    text-decoration: none;
+}
+
+.second:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.third{
+    text-decoration: none;
+}
+
+.third:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.fourth{
+    text-decoration: none;
+}
+
+.fourth:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.fifth{
+    text-decoration: none;
+}
+
+.fifth:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.sixth{
+    text-decoration: none;
+}
+
+.sixth:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 23px;
+}
+
+.resources a {
+    color: #ffffff;
+}
+
+.resources ul {
+    color: black;
+}
+
+/* Design for about section */
+.overview  {
+    padding: 90px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    text-align: start;
+    font-size: 25px;
+}
+
+.overview h1 {
+    padding: 20px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+    border: 2px solid black;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.overview p {
+    font-family: "Roboto";
+    font-size: 23px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 100px;
+    margin-left: 130px;
+    padding-bottom: 30px;
+}
+
+.leader img {
+    margin-top: 40px;
+    width: 350px;
+    border-radius: 120px;
+    
+}
+
+.leader ul {
+    margin-bottom: 40px;
+}
+
+.leader h1 {
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+
+.leader h3 {
+    margin-bottom: 10px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+
+.leader li {
+    font-size: 20px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+.leader {
+    border: 2px solid black;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    text-align: center;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.member img {
+    margin-top: 40px;
+    width: 350px;
+    border-radius: 120px;
+}
+
+.member ul {
+    margin-bottom: 40px;
+}
+
+.member h1 {
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+
+.member li {
+    font-size: 20px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+
+.member h3 {
+    margin-bottom: 10px;
+    font-family: "Playfair Display";
+    color: #ffffff;
+}
+
+.member {
+    border: 2px solid black;
+    background: linear-gradient(90deg, #000000, #3533cd);
+    text-align: center;
+    border-radius: 10px;
+    width: 450px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .navbar-container {
+        padding-left: 10px;
+        padding-right: 20px;
+        position: fixed;
+    }
+
+    .navbar {
+        display: flex;
+        position: fixed;
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu a {
+        display: flex;
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo-img{
+        width: 140px;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 80px;
+        padding: 40px; 
+    }
+
+    .home-img img {
+        width: 90%;
+    }
+
+    .home-content h1 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .home-content p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .work {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 50px;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .work p{
+        font-size: 15px;
+        width: 350px;
+        margin-left: 10px;
+    }
+    
+    .title {
+        font-size: 40px;
+        width: 350px;
+        height: 4cm;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 15px;
+    }
+
+    .work-image{
+        display: none;
+    }
+
+    .links {
+        padding: 20px;
+        width: 380px;
+    }
+
+    .links h3 {
+        font-size: 20px;
+    }
+
+    .links a {
+        font-size: 15px;
+    }
+
+    .popular {
+        margin: 70px;
+        margin-top: 85px;
+    }
+
+    .popular h1 {
+        font-size: 35px;
+        width: 270px;
+        margin-left: 40px;
+    }
+
+    .se-content {
+        font-size: 17px;
+        width: 360px;
+    }
+
+    #table {
+        width: 100px;
+        height: 11cm;
+    }
+    
+    thead {
+        background: linear-gradient(90deg, #000000, #3533cd);
+        color: #ffffff;
+        font-size: 13px;
+    }
+    
+    td {
+        font-size: 10px;
+    }
+
+    .logo-container {
+        display: flex;
+    }
+
+    .tricksandtips {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 40px;
+    }
+
+    .tips, .techniques, .hacks {
+        padding: 20px;
+    }
+
+    .resources {
+        padding: 30px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 130px;
+        padding-bottom: 30px;
+    }
+
+    .overview  {
+        text-align: start;
+        font-size: 25px;
+        margin-bottom: 1px;
+    }
+    
+    .overview h1 {
+        padding: 20px;
+        font-size: 40px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+    }
+    
+    .overview p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .leader img {
+        margin-top: 40px;
+        width: 150px;
+        border-radius: 120px;
+    }
+    
+    .leader h1 {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    
+    .leader {
+        border-radius: 10px;
+        width: 350px;
+        margin-left: -165px;
+        margin-bottom: 10px;
+    }
+    
+    .member img {
+        margin-top: 40px;
+        width: 150px;
+        border-radius: 120px;
+    }
+        
+    .member h1 {
+        font-size: 23px;
+        margin-top: 15px;
+    }
+        
+    .member {
+        border-radius: 10px;
+        width: 350px;
+        margin-left: -165px;
+    }
+}
+
