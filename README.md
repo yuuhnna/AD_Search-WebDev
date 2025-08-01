@@ -1,11 +1,11 @@
-# Project Details
+# PROJECT DETAILS
 **Project Name:** AD Search [Website]  
 **Author:** yuuhnna  
 **Programming Language:** HTML and CSS  
 **Date Started:** 11/23/2024  
 **Date Finished:** 12/03/2024  
 
-# Overview
+# OVERVIEW
 AD Search is an educational web platform that offers in-depth insights into search engines, their algorithms, and features, tailored for developers and learners alike. It combines structured content, visual aids, and interactive elements to enhance understanding of search engine technologies and opmtimization techniques.
 
 ### Why AD Search?
@@ -22,5 +22,5 @@ This project aims to serve as coomprehensive resource for understanding search e
   
 - 📚 **Resource Hub:** Tips, tricks and downloadabble references to optimize search strategies and enhance technical skills.
 
-# Notes
+# PROGRAMMER'S NOTES
 - This project was created to fulfill academic requirements and gain practical experience.
