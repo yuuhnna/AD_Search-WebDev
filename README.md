@@ -21,3 +21,6 @@ This project aims to serve as coomprehensive resource for understanding search e
 - 🔍 **Search Engine Diversity:** Comparative insights into popular search engines, their streghts, and weaknesses.
   
 - 📚 **Resource Hub:** Tips, tricks and downloadabble references to optimize search strategies and enhance technical skills.
+
+# Notes
+- This project was created to fulfill academic requirements and gain practical experience.
